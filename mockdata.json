@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "datum": "2022-11-23",
+        "tid": "10:30",
+        "kund": "Bill Gates",
+        "nivå": "Diamant",
+        "städare": "Städare 1",
+        "status": true
+    },
+    {
+        "id": 2,
+        "datum": "2022-10-15",
+        "tid": "07.00",
+        "kund": "Bill Gates",
+        "nivå": "Topp",
+        "städare": "Städare 2",
+        "status": true
+    },
+    {
+        "id": 3,
+        "datum": "2022-12-10",
+        "tid": "11.00",
+        "kund": "Bill Gates",
+        "nivå": "Fönster",
+        "städare": "Städare 2",
+        "status": false
+    },
+    {
+        "id": 4,
+        "datum": "2023-01-18",
+        "tid": "14.30",
+        "kund": "Bill Gates",
+        "nivå": "Topp",
+        "städare": "Städare 2",
+        "status": false
+    },
+    {
+        "id": 5,
+        "datum": "2022-09-05",
+        "tid": "17.00",
+        "kund": "Bill Gates",
+        "nivå": "Basic",
+        "städare": "Städare 2",
+        "status": true
+    },
+    {
+        "id": 6,
+        "datum": "2023-03-29",
+        "tid": "15.00",
+        "kund": "Bill Gates",
+        "nivå": "Diamant",
+        "städare": "Städare 2",
+        "status": false
+    },
+    {
+        "id": 7,
+        "datum": "2022-07-29",
+        "tid": "14.00",
+        "kund": "Bill Gates",
+        "nivå": "Fönster",
+        "städare": "Städare 2",
+        "status": true
+    },
+    {
+        "id": 8,
+        "datum": "2023-02-04",
+        "tid": "08.30",
+        "kund": "Bill Gates",
+        "nivå": "Basic",
+        "städare": "Städare 2",
+        "status": false
+    }
+]

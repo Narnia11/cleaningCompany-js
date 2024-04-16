@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina bokningar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5fab3e54a.js" crossorigin="anonymous" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="nav">
+            <a href="index.html">
+                <div class="nav-logo">
+                    <span>Städafint</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">Våra tjänster</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Kontakta oss</a></li>
+            </ul>
+            <ul class="nav-login">
+                <li><a href="#" class="btn-primary">Logga ut</a></li>
+            </ul>
+            <a href="#" class="mobile-menu"><img src="images/hamburger-menu.svg" alt="mobil meny"></a>
+        </nav>
+    </header>
+
+    <h2 id="welcome-headline" class="headline-my-bookings"></h2>
+
+    <section class="tables-bookings">
+        <article>
+            <h2>Kommande städningar</h2>
+            <table id="table-container-booked">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Städare</th>
+                        <th>Nivå</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body-booked">
+                </tbody>
+            </table>
+        </article>
+
+        <article>
+            <h2>Utförda städningar</h2>
+            <table id="table-container-completed">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Städare</th>
+                        <th>Nivå</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body-completed">
+                </tbody>
+            </table>
+            <div class="delete-bookings-btn">
+                <button class="btn-primary" id="btn-delete-bookings">Radera historik</button>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="booking-form-section">
+        <div class="booking-form-container">
+            <form id="booking-form">
+                <h3>Boka ny städning</h3>
+                <fieldset>
+                    <legend>Val av tjänst</legend>
+                    <div>
+                        <input type="radio" id="diamond" name="service" value="Diamant">
+                        <label for="diamond">Diamant</label>
+
+                        <div>
+                            <input type="radio" id="top" name="service" value="Topp" required>
+                            <label for="top">Topp</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="basic" name="service" value="Basic" required>
+                            <label for="basic">Basic</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="window" name="service" value="Fönster" required>
+                            <label for="window">Fönster</label>
+                        </div>
+                </fieldset>
+                <div class="form-service-choice">
+                    <label for="cleaner-choice">Val av städare:</label>
+                    <select name="cleanerChoice" id="cleaner-choice">
+                        <option disabled value="">--Välj städare--</option>
+                        <option value="Städare 1">Städare 1</option>
+                        <option value="Städare 2">Städare 2</option>
+                        <option value="Städare 3">Städare 3</option>
+                    </select>
+                </div>
+                <div class="form-date">
+                    <label for="cleaning-date">Datum:</label>
+                    <input type="date" id="cleaning-date" name="cleaningDate" required>
+                </div>
+                <div class="form-date">
+                    <label for="cleaning-time">Tid (07:00 - 18:00):</label>
+                    <input type="time" id="cleaning-time" name="cleaningTime" min="07:00" max="18:00" required>
+                </div>
+                <input class="btn-primary" id="createBookingBtn" type="submit" value="Boka städning">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>&copy; Städafint AB 2022</span>
+        <div>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
